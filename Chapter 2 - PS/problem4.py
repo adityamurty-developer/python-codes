@@ -3,4 +3,4 @@
 a = int(input("Enter value of a: "))
 b = int(input("Enter value of b: "))
 
-c = print("a is greater than b: ", a>b)
+print("a is greater than b: ", a>b)
