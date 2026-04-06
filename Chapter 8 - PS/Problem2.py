@@ -2,8 +2,13 @@
 
 def fahrenheit(celsius):
     if celsius < -273.15:
-        return "Invalid temperature!"
+        return None
     return (9/5) * celsius + 32
 
 celsius = float(input("Enter temperature in celsius: "))
-print(f"Conversion of C to F is: {fahrenheit(celsius)}")
+result = fahrenheit(celsius)
+
+if result is None:
+    print("Invalid temperature!")
+else:
+    print(f"{round(result, 2)} °F")
